@@ -8,20 +8,28 @@ struct Numbers {
 
 // Функции для ввода значений X, Y, Z
 void getX(Numbers& nums) {
-
+    cout << "Введите число X: ";
+    cin >> nums.x;
 }
 
 void getY(Numbers& nums) {
-
+    cout << "Введите число Y: ";
+    cin >> nums.y;
 }
 
 void getZ(Numbers& nums) {
-
+    cout << "Введите число Z: ";
+    cin >> nums.z;
 }
 
 
+// Функция для определения количества четных чисел
 void CountChet(const Numbers& nums) {
-
+    int count = 0;
+    if (nums.x % 2 == 0) count++;
+    if (nums.y % 2 == 0) count++;
+    if (nums.z % 2 == 0) count++;
+    cout << "Количество четных чисел: " << count << endl;
 }
 
 
