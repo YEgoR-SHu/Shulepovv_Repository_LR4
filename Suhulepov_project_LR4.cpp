@@ -8,7 +8,8 @@ struct Numbers {
 
 // Функции для ввода значений X, Y, Z
 void getX(Numbers& nums) {
-
+    cout << "Введите число X: ";
+    cin >> nums.x;
 }
 
 void getY(Numbers& nums) {
