@@ -20,8 +20,13 @@ void getZ(Numbers& nums) {
 }
 
 
+// Функция для определения количества четных чисел
 void CountChet(const Numbers& nums) {
-
+    int count = 0;
+    if (nums.x % 2 == 0) count++;
+    if (nums.y % 2 == 0) count++;
+    if (nums.z % 2 == 0) count++;
+    cout << "Количество четных чисел: " << count << endl;
 }
 
 
