@@ -25,8 +25,13 @@ void CountChet(const Numbers& nums) {
 }
 
 
+// Функция для вычисления суммы четных чисел
 void SumChet(const Numbers& nums) {
-
+    int sum = 0;
+    if (nums.x % 2 == 0) sum += nums.x;
+    if (nums.y % 2 == 0) sum += nums.y;
+    if (nums.z % 2 == 0) sum += nums.z;
+    cout << "Сумма четных чисел: " << sum << endl;
 }
 
 void showMenu() {
