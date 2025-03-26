@@ -12,7 +12,8 @@ void getX(Numbers& nums) {
 }
 
 void getY(Numbers& nums) {
-
+    cout << "Введите число Y: ";
+    cin >> nums.y;
 }
 
 void getZ(Numbers& nums) {
